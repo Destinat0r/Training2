@@ -1,5 +1,6 @@
 package com.companic.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +15,9 @@ public class User {
     @Value("${user.last_name}")
     private String lastName;
 
+    @Autowired
+    private Account account;
+
     public User() {}
 
     public int getId() {
@@ -22,6 +26,14 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public String getFirstName() {
