@@ -14,6 +14,6 @@ public class User {
     @Value("${user.last_name}")
     private String lastName;
 
-
+    
 
 }
