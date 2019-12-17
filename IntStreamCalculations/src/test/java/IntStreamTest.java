@@ -9,6 +9,6 @@ public class IntStreamTest {
     public void shouldReturnAverageUsingAverage() {
 
         int[] intArray = {5, 3, 9, 7};
-        assertEquals("should return 24", 24,  IntStreamUtils.getAverageUsingAverage(intArray));
+        assertEquals("should return 6", 6,  IntStreamUtils.getAverageUsingAverage(intArray));
     }
 }
