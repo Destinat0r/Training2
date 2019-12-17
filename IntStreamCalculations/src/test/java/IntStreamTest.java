@@ -8,6 +8,7 @@ public class IntStreamTest {
     @Test
     public void shouldReturnAverageUsingAverage() {
 
-        assertEquals("should return 24", 24,  IntStreamUtils.getAverageUsingAverage());
+        int[] intArray = {5, 3, 9, 7};
+        assertEquals("should return 24", 24,  IntStreamUtils.getAverageUsingAverage(intArray));
     }
 }
