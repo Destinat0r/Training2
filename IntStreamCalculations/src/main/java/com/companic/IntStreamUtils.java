@@ -16,4 +16,8 @@ public class IntStreamUtils {
     public static int countZeros(int[] array) {
         return (int) Arrays.stream(array).filter(x -> x == 0).count();
     }
+
+    public static int countPositives(int[] array) {
+        return (int) Arrays.stream(array).filter(x -> x > 0).count();
+    }
 }
