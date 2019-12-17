@@ -1,8 +1,10 @@
 package com.companic;
 
+import java.util.Arrays;
+
 public class IntStreamUtils {
 
     public static int getAverageUsingAverage(int[] intArray) {
-        return 0;
+        return (int) Arrays.stream(intArray).average().getAsDouble();
     }
 }
