@@ -5,6 +5,6 @@ import java.util.Arrays;
 public class IntStreamUtils {
 
     public static int getAverageUsingAverage(int[] intArray) {
-        return (int) Arrays.stream(intArray).average().getAsDouble();
+        return (int) Math.round(Arrays.stream(intArray).average().getAsDouble());
     }
 }
