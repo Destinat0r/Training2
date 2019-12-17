@@ -29,4 +29,13 @@ public class IntStreamTest {
         assertEquals("should return 3", 3,  IntStreamUtils.countZeros(array));
     }
 
+    @Test
+    public void shouldCountPositiveElementsCorrectly() {
+        int[] array = {1, -1, 4, 53, -7, 1, -5, 0, 1};
+
+        assertEquals("should return 5", 5,  IntStreamUtils.countPositives(array));
+    }
+
+
+
 }
