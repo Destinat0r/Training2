@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class IntStreamTest {
@@ -44,7 +45,7 @@ public class IntStreamTest {
     public void shoundReturnMinElementAndItsIndex() {
         int[] array = {1, -1, 4, 53, -7, 1, -5, 0, 1};
 
-        assertEquals("should be element -7 and index 4", new int[]{-7, 4}, IntStreamUtils.getMinimalAndIndex(array));
+        assertArrayEquals("should be element -7 and index 4", new int[]{-7, 4}, IntStreamUtils.getMinimalAndIndex(array));
     }
 
 }
